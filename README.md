@@ -2,7 +2,7 @@
 ![image](https://github.com/dxwong/NPublic.Dapper/blob/master/NDapper.png)<br>
 
 .NET Standard 是 .NET Core 和 .NET Framework 共有的基础。<br>
-NPublic.Dapper重新以.NET Standard封装Dapper并增加数据库操作错误日志。该Dapper适用.NET Core，.NET Framework<br><br>
+NPublic.Dapper重新以.NET Standard封装Dapper并增加数据库操作错误日志。<br>该Dapper适用.NET Core，.NET Framework(.NET Framework会生成很多DLL，后续可能考虑封装两个版本)<br><br>
 
 重新封装后的优点：<br>
 1.对原有Dapper继承，不会有性能损耗。<br>
