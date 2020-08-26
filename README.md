@@ -1,7 +1,5 @@
 # NPublic.Dapper
-.NET Standard Library 是 .NET Core 和 .NET Framework 共有的基础。<br>
-Dapper是.NET平台数据库ORM最优选择之一，速度最快，最简单。<br><br>
-
+.NET Standard 是 .NET Core 和 .NET Framework 共有的基础。<br>
 NPublic.Dapper重新以.NET Standard封装Dapper并增加数据库操作错误日志。该Dapper适用.NET Core，.NET Framework<br><br>
 
 重新封装后的优点：<br>
