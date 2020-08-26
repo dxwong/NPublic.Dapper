@@ -9,7 +9,7 @@ NPublic.Dapper重新以.NET Standard封装Dapper并增加数据库操作错误�
 <1>极少情况下，极少用户操作与数据库有关的异常<br>
 <2>用户试探性攻击，注入<br>
 <3>快速定位系统异常出现的位置，错误的SQL语句<br>
-4.上述异常由NPublic.Dapper数据库层统一处理。开发过程不再关心数据库异常，专注业务开发。<br><br>
+4.上述异常由NPublic.Dapper数据库层统一处理。开发过程不再关心这些异常，专注业务开发。<br><br>
 
 
 5.NPublic.Dapper将异常日志压入MQ队列，以下情况可根据需要自行扩展<br>
