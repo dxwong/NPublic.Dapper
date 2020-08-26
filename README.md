@@ -1,4 +1,6 @@
 # NPublic.Dapper
+![image](https://github.com/dxwong/NPublic.Dapper/blob/master/NDapper.png)<br>
+
 .NET Standard 是 .NET Core 和 .NET Framework 共有的基础。<br>
 NPublic.Dapper重新以.NET Standard封装Dapper并增加数据库操作错误日志。该Dapper适用.NET Core，.NET Framework<br><br>
 
@@ -46,3 +48,6 @@ Query:select id,symbol from tb2<br>
 2020-08-26 10:30:54 - 169.254.120.171<br>
 Query:select id,symbol from tb001<br>
 SQLite Error 1: 'no such table: tb001'.
+
+
+
