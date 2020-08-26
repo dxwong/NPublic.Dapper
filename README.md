@@ -1,8 +1,8 @@
 # NPublic.Dapper
-.NET Standard Library 是 .NET Core 和 .NET Framework 共有的基础。
-Dapper是.NET平台数据库ORM最优选择之一，速度最快，最简单。
+.NET Standard Library 是 .NET Core 和 .NET Framework 共有的基础。<br>
+Dapper是.NET平台数据库ORM最优选择之一，速度最快，最简单。<br><br>
 
-NPublic.Dapper重新以.NET Standard封装Dapper并增加数据库操作错误日志。该Dapper适用.NET Core，.NET Framework
+NPublic.Dapper重新以.NET Standard封装Dapper并增加数据库操作错误日志。该Dapper适用.NET Core，.NET Framework<br><br>
 
 重新封装后的优点：<br>
 1.对原有Dapper继承，不会有性能损耗。<br>
@@ -20,29 +20,29 @@ NPublic.Dapper重新以.NET Standard封装Dapper并增加数据库操作错误�
 <4>使用特定工具，监控log日志文件，环比，同比增加X即报警提示<br>
 
 【数据库操作Demo】<br>
-NDapper db = DapperManager.CreateDatabase(ConnectionStr1, DBType.SqlServer);
-var list= db.Query<KLine>("select id,symbol from tb");//查询SqlServer
+NDapper db = DapperManager.CreateDatabase(ConnectionStr1, DBType.SqlServer);<br>
+var list= db.Query<KLine>("select id,symbol from tb");//查询SqlServer<br><br>
 
-NDapper mdb1 = DapperManager.CreateDatabase(ConnectionStr1, DBType.MySql);
-var list1 = mdb1.Query<KLine>("select id,symbol from tb1");//查询MySql数据库1的tb1数据表，返回Model
+NDapper mdb1 = DapperManager.CreateDatabase(ConnectionStr1, DBType.MySql);<br>
+var list1 = mdb1.Query<KLine>("select id,symbol from tb1");//查询MySql数据库1的tb1数据表，返回Model<br><br>
             
-NDapper mdb2 = DapperManager.CreateDatabase(ConnectionStr2, DBType.MySql);
-var list2 = mdb2.Query<KLine>("select id,symbol from tb2");//查询MySql数据库2的tb2数据表，返回Model
+NDapper mdb2 = DapperManager.CreateDatabase(ConnectionStr2, DBType.MySql);<br>
+var list2 = mdb2.Query<KLine>("select id,symbol from tb2");//查询MySql数据库2的tb2数据表，返回Model<br><br>
 
-NDapper dbSqlLite = DapperManager.CreateDatabase(@"symbo.db", DBType.SqlLite);
-string createtb = "create table  tb1 (id int, symbol varchar(50))";//SqlLite数据库中创建tb1数据表
-int x = dbSqlLite.Execute(createtb);
+NDapper dbSqlLite = DapperManager.CreateDatabase(@"symbo.db", DBType.SqlLite);<br>
+string createtb = "create table  tb1 (id int, symbol varchar(50))";//SqlLite数据库中创建tb1数据表<br>
+int x = dbSqlLite.Execute(createtb);<br><br><br>
 
 
-【异常错误日志格式】
-2020-08-26 10:30:53 - 169.254.120.171
-Query:select id,symbol from tb1
-对象名 'tb1' 无效。
+【异常错误日志格式】<br>
+2020-08-26 10:30:53 - 169.254.120.171<br>
+Query:select id,symbol from tb1<br>
+对象名 'tb1' 无效。<br><br>
 
-2020-08-26 10:30:54 - 169.254.120.171
-Query:select id,symbol from tb2
-对象名 'tb2' 无效。
+2020-08-26 10:30:54 - 169.254.120.171<br>
+Query:select id,symbol from tb2<br>
+对象名 'tb2' 无效。<br><br>
 
-2020-08-26 10:30:54 - 169.254.120.171
-Query:select id,symbol from tb001
+2020-08-26 10:30:54 - 169.254.120.171<br>
+Query:select id,symbol from tb001<br>
 SQLite Error 1: 'no such table: tb001'.
