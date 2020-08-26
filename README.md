@@ -1,5 +1,5 @@
 # NPublic.Dapper
-![image](https://github.com/dxwong/NPublic.Dapper/blob/master/NDapper.png)<br>
+![image](http://122.114.170.153:133/images/NDapper.png)
 
 NPublic.Dapper重新以.NET Standard封装Dapper并增加数据库操作错误日志。<br>
 适用.NET Core，.NET Framework(.NET Framework会生成很多DLL，后续考虑Windows平台可单独封装一个版本)<br><br>
